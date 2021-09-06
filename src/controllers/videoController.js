@@ -10,7 +10,6 @@ export const home = async (req, res) => {
 };
 export const watch = (req, res) => {
   const { id } = req.params;
-  const video = videos[id - 1];
   return res.render("watch", { pageTitle: `Watching` });
 };
 export const getEdit = (req, res) => {
